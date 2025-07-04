@@ -102,7 +102,6 @@ function Quiz(props) {
   return (
     <div className="min-h-screen bg-blue-100 p-4">
       <div className="max-w-3xl mx-auto">
-
         {/* Header with back button and question number */}
         <div className="bg-white rounded p-4 mb-4 shadow">
           <div className="flex justify-between items-center mb-3">
