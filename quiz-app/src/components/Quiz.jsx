@@ -88,7 +88,7 @@ function Quiz(props) {
   return (
     <div className="min-h-screen bg-blue-100 p-4">
       <div className="max-w-3xl mx-auto">
-        {/* Header */}
+        
         <div className="bg-white rounded p-4 mb-4 shadow">
           <div className="flex justify-between items-center mb-3">
             <button
@@ -106,7 +106,7 @@ function Quiz(props) {
             </p>
           </div>
 
-          {/* Progress Bar */}
+         
           <div className="w-full bg-gray-200 h-2 rounded">
             <div
               className="bg-blue-600 h-2 rounded"
@@ -114,10 +114,10 @@ function Quiz(props) {
             ></div>
           </div>
 
-          {/* Timer */}
+         
           <div className="flex justify-center mt-3">
             <div
-              className={`flex items-center gap-2 px-3 py-1 rounded text-sm ${
+              className={`flex items- gap-2 px-3 py-1 rounded text-sm ${
                 showTimeWarning
                   ? "bg-red-200 text-red-700"
                   : "bg-blue-200 text-blue-800"
@@ -129,7 +129,7 @@ function Quiz(props) {
           </div>
         </div>
 
-        {/* Question */}
+        
         <div className="bg-white rounded p-4 shadow mb-4">
           <h3 className="text-base font-semibold text-center mb-3">
             {currentQ.question}
@@ -160,7 +160,7 @@ function Quiz(props) {
           </div>
         </div>
 
-        {/* Navigation */}
+        
         <div className="flex justify-between items-center">
           <button
             onClick={goToPreviousQuestion}
