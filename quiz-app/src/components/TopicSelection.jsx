@@ -2,8 +2,8 @@ import React from "react";
 import { Clock, Trophy, Users } from "lucide-react";
 
 function TopicSelection(props) {
-  const topics = props.topics; // All quiz topics from parent
-  const onSelectTopic = props.onSelectTopic; // Function to call when user selects a topic
+  const topics = props.topics;
+  const onSelectTopic = props.onSelectTopic;
 
   return (
     <div className="min-h-screen bg-blue-100 p-4">
@@ -35,12 +35,10 @@ function TopicSelection(props) {
             return (
               <div
                 key={topic.id}
-                onClick={() => onSelectTopic(topic)} // when card is clicked.....start quiz
+                onClick={() => onSelectTopic(topic)}
                 className="bg-white p-4 rounded-lg shadow hover:shadow-md cursor-pointer transform hover:scale-105 transition duration-300 border hover:border-blue-400"
               >
                 <div className="text-center">
-                  <div className="text-3xl mb-2">{topic.icon}</div>
-
                   <h3 className="text-lg font-semibold text-blue-700 mb-1">
                     {topic.name}
                   </h3>
