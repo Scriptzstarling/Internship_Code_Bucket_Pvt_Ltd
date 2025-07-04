@@ -198,7 +198,7 @@ function Quiz(props) {
             }
             className="flex items-center gap-2 px-4 py-2 text-sm rounded bg-blue-600 text-white hover:bg-blue-700"
           >
-            {currentQuestion === totalQuestions - 1 ? "Finis" : "Next"}
+            {currentQuestion === totalQuestions - 1 ? "Finish" : "Next"}
             <ArrowRight size={16} />
           </button>
         </div>
