@@ -6,22 +6,31 @@ function Quiz(props) {
   const onComplete = props.onComplete;
   const onBack = props.onBack;
 
+  // Track current question number (starting from 0)
   const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  // Store user’s selected answers as object { questionIndex: optionIndex }
   const [selectedAnswers, setSelectedAnswers] = useState({});
+
+  // Timer countdown for each question (in seconds)
   const [timeLeft, setTimeLeft] = useState(10);
+
+  // Show red warning if less than 3 seconds left
   const [showTimeWarning, setShowTimeWarning] = useState(false);
 
   const questions = topic.questions;
   const totalQuestions = questions.length;
 
+  // Timer logic that resets on every new question
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeLeft((prevTime) => {
         if (prevTime <= 1) {
-          goToNextQuestion();
+          goToNextQuestion(); // Auto move to next if time ends
           return 10;
         }
 
+        // Show warning when time is very low
         if (prevTime <= 3) {
           setShowTimeWarning(true);
         } else {
@@ -32,13 +41,15 @@ function Quiz(props) {
       });
     }, 1000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Clear timer on unmount/change
   }, [currentQuestion]);
 
+  // When user clicks an answer option
   function selectAnswer(index) {
     setSelectedAnswers({ ...selectedAnswers, [currentQuestion]: index });
   }
 
+  // Move to next question or finish if it's the last
   function goToNextQuestion() {
     if (currentQuestion < totalQuestions - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -49,6 +60,7 @@ function Quiz(props) {
     }
   }
 
+  // Move to previous question
   function goToPreviousQuestion() {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
@@ -57,6 +69,7 @@ function Quiz(props) {
     }
   }
 
+  // Calculate score and send results to parent
   function finishQuiz() {
     const results = [];
 
@@ -82,13 +95,15 @@ function Quiz(props) {
     });
   }
 
+  // Current question and progress
   const currentQ = questions[currentQuestion];
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;
 
   return (
     <div className="min-h-screen bg-blue-100 p-4">
       <div className="max-w-3xl mx-auto">
-        
+
+        {/* Header with back button and question number */}
         <div className="bg-white rounded p-4 mb-4 shadow">
           <div className="flex justify-between items-center mb-3">
             <button
@@ -106,7 +121,7 @@ function Quiz(props) {
             </p>
           </div>
 
-         
+          {/* Blue progress bar */}
           <div className="w-full bg-gray-200 h-2 rounded">
             <div
               className="bg-blue-600 h-2 rounded"
@@ -114,10 +129,10 @@ function Quiz(props) {
             ></div>
           </div>
 
-         
+          {/* Countdown Timer */}
           <div className="flex justify-center mt-3">
             <div
-              className={`flex items- gap-2 px-3 py-1 rounded text-sm ${
+              className={`flex items-center gap-2 px-3 py-1 rounded text-sm ${
                 showTimeWarning
                   ? "bg-red-200 text-red-700"
                   : "bg-blue-200 text-blue-800"
@@ -129,12 +144,13 @@ function Quiz(props) {
           </div>
         </div>
 
-        
+        {/* Show current question and options */}
         <div className="bg-white rounded p-4 shadow mb-4">
           <h3 className="text-base font-semibold text-center mb-3">
             {currentQ.question}
           </h3>
 
+          {/* Options list */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {currentQ.options.map((option, index) => (
               <button
@@ -147,6 +163,7 @@ function Quiz(props) {
                 }`}
               >
                 <div className="flex items-center gap-2">
+                  {/* Show A, B, C, D for options */}
                   <span className="w-7 h-7 border rounded-full flex items-center justify-center text-sm font-bold">
                     {String.fromCharCode(65 + index)}
                   </span>
@@ -160,7 +177,7 @@ function Quiz(props) {
           </div>
         </div>
 
-        
+        {/* Navigation buttons */}
         <div className="flex justify-between items-center">
           <button
             onClick={goToPreviousQuestion}
@@ -175,6 +192,7 @@ function Quiz(props) {
             Prev
           </button>
 
+          {/* Dots showing answered/unanswered */}
           <div className="flex gap-1">
             {questions.map((_, i) => (
               <div
@@ -190,6 +208,7 @@ function Quiz(props) {
             ))}
           </div>
 
+          {/* Next or Finish button */}
           <button
             onClick={
               currentQuestion === totalQuestions - 1
