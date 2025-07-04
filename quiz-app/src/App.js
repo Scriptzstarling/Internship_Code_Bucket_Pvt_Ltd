@@ -5,23 +5,22 @@ import Results from './components/Results';
 import quizData from './data/quizData.json'
 
 function App() {
-  // Keep track of which screen is being shown
+   
   const [currentView, setCurrentView] = useState('topics');
-
-  // Store the selected topic when user picks one
+ 
   const [selectedTopic, setSelectedTopic] = useState(null);
 
-  // Store quiz result after finishing the quiz
+  
   const [quizResults, setQuizResults] = useState(null);
 
-  // All topic data
+  
   const [topics, setTopics] = useState([]);
 
-  // Load quiz data once when app starts
+   
   useEffect(() => {
     const loadTopics = async () => {
       try {
-        // Simulate fetching data (could be an API)
+        //  fetching data 
         await new Promise((resolve) => setTimeout(resolve, 500));
         setTopics(quizData.topics);
       } catch (err) {
@@ -32,32 +31,32 @@ function App() {
     loadTopics();
   }, []);
 
-  // When user selects a topic
+  //selects a topic
   function handleTopicSelect(topic) {
     setSelectedTopic(topic);
     setCurrentView('quiz');
   }
 
-  // When user finishes quiz
+  //finishes quiz
   function handleQuizComplete(results) {
     setQuizResults(results);
     setCurrentView('results');
   }
 
-  // When user clicks "Retake"
+  //clicks Retake
   function handleRetakeQuiz() {
     setCurrentView('quiz');
     setQuizResults(null);
   }
 
-  // When user wants to go back to topic list
+  //go back to topic list
   function handleBackToTopics() {
     setCurrentView('topics');
     setSelectedTopic(null);
     setQuizResults(null);
   }
 
-  // Show the screen based on currentView state
+  //screen based on currentView state
   function renderCurrentView() {
     if (currentView === 'topics') {
       return (
@@ -83,7 +82,7 @@ function App() {
         />
       );
     } else {
-      // Just in case no view is set
+      
       return (
         <TopicSelection
           topics={topics}
@@ -93,7 +92,7 @@ function App() {
     }
   }
 
-  // App main return
+  
   return (
     <div className="App">
       {renderCurrentView()}
