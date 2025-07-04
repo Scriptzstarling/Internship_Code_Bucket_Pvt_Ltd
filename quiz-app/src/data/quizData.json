@@ -1,0 +1,339 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "name": "Science",
+      "icon": "",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the chemical symbol for water?",
+          "options": ["H2O", "CO2", "NaCl", "CH4"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "question": "What is the speed of light in vacuum?",
+          "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "question": "Which element has the atomic number 1?",
+          "options": ["Helium", "Hydrogen", "Lithium", "Carbon"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "question": "What is the largest organ in the human body?",
+          "options": ["Brain", "Heart", "Liver", "Skin"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 6,
+          "question": "How many bones are in an adult human body?",
+          "options": ["206", "208", "210", "212"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 7,
+          "question": "What gas do plants absorb from the atmosphere?",
+          "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "question": "Which blood type is known as the universal donor?",
+          "options": ["A+", "B+", "AB+", "O-"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 9,
+          "question": "What is the hardest natural substance on Earth?",
+          "options": ["Gold", "Iron", "Diamond", "Quartz"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 10,
+          "question": "Which force keeps planets in orbit around the sun?",
+          "options": ["Magnetic force", "Gravity", "Nuclear force", "Friction"],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "History",
+      "icon": "",
+      "questions": [
+        {
+          "id": 1,
+          "question": "In which year did World War II end?",
+          "options": ["1944", "1945", "1946", "1947"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "question": "Who was the first President of the United States?",
+          "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "question": "Which ancient wonder of the world was located in Alexandria?",
+          "options": ["Hanging Gardens", "Lighthouse", "Colossus", "Mausoleum"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "question": "The Berlin Wall fell in which year?",
+          "options": ["1987", "1988", "1989", "1990"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 5,
+          "question": "Which empire was ruled by Julius Caesar?",
+          "options": ["Greek Empire", "Roman Empire", "Byzantine Empire", "Ottoman Empire"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "question": "The Declaration of Independence was signed in which year?",
+          "options": ["1774", "1775", "1776", "1777"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "question": "Which country gifted the Statue of Liberty to the United States?",
+          "options": ["Britain", "Spain", "France", "Italy"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "question": "The Renaissance period began in which country?",
+          "options": ["France", "Germany", "Italy", "Spain"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 9,
+          "question": "Who was known as the Iron Lady?",
+          "options": ["Queen Elizabeth", "Margaret Thatcher", "Indira Gandhi", "Golda Meir"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "question": "The Titanic sank in which year?",
+          "options": ["1910", "1911", "1912", "1913"],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Geography",
+      "icon": "",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the capital of Australia?",
+          "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "question": "Which is the longest river in the world?",
+          "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "question": "How many continents are there?",
+          "options": ["5", "6", "7", "8"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "question": "Which country has the most natural lakes?",
+          "options": ["Russia", "Canada", "Finland", "Sweden"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "question": "What is the smallest country in the world?",
+          "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "question": "Which mountain range contains Mount Everest?",
+          "options": ["Andes", "Himalayas", "Rocky Mountains", "Alps"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "question": "What is the largest desert in the world?",
+          "options": ["Sahara", "Gobi", "Antarctica", "Arabian"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "question": "Which ocean is the largest?",
+          "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 9,
+          "question": "What is the capital of Brazil?",
+          "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 10,
+          "question": "Which country is both in Europe and Asia?",
+          "options": ["Russia", "Turkey", "Kazakhstan", "All of the above"],
+          "correctAnswer": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sports",
+      "icon": "",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How many players are on a basketball team on the court at one time?",
+          "options": ["4", "5", "6", "7"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "question": "Which sport is known as 'The Beautiful Game'?",
+          "options": ["Basketball", "Tennis", "Football/Soccer", "Cricket"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "question": "How often are the Summer Olympics held?",
+          "options": ["Every 2 years", "Every 3 years", "Every 4 years", "Every 5 years"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "question": "In which sport would you perform a slam dunk?",
+          "options": ["Volleyball", "Basketball", "Tennis", "Baseball"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "question": "What is the maximum score possible in ten-pin bowling?",
+          "options": ["250", "280", "300", "350"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "question": "Which country has won the most FIFA World Cups?",
+          "options": ["Germany", "Argentina", "Brazil", "Italy"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "question": "In tennis, what is a score of 40-40 called?",
+          "options": ["Advantage", "Deuce", "Match point", "Break point"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "question": "How many holes are played in a typical round of golf?",
+          "options": ["16", "18", "20", "22"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "question": "Which sport uses terms like 'strike' and 'spare'?",
+          "options": ["Baseball", "Bowling", "Tennis", "Golf"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "question": "What is the diameter of a basketball hoop in inches?",
+          "options": ["16", "18", "20", "22"],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Technology",
+      "icon": "",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does 'HTTP' stand for?",
+          "options": ["HyperText Transfer Protocol", "High Tech Transfer Protocol", "Home Tool Transfer Protocol", "Hyperlink Text Transfer Protocol"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "question": "Which company developed the iPhone?",
+          "options": ["Google", "Microsoft", "Apple", "Samsung"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "question": "What does 'CPU' stand for?",
+          "options": ["Central Processing Unit", "Computer Processing Unit", "Central Program Unit", "Computer Program Unit"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "question": "Which programming language is known as the 'language of the web'?",
+          "options": ["Python", "Java", "JavaScript", "C++"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 5,
+          "question": "What does 'AI' stand for?",
+          "options": ["Automated Intelligence", "Artificial Intelligence", "Advanced Intelligence", "Algorithmic Intelligence"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "question": "Which social media platform is known for its 280-character limit?",
+          "options": ["Facebook", "Instagram", "Twitter", "LinkedIn"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "question": "What does 'USB' stand for?",
+          "options": ["Universal Serial Bus", "Universal System Bus", "United Serial Bus", "United System Bus"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 8,
+          "question": "Which company owns YouTube?",
+          "options": ["Facebook", "Google", "Microsoft", "Amazon"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "question": "What does 'RAM' stand for?",
+          "options": ["Random Access Memory", "Read Access Memory", "Rapid Access Memory", "Remote Access Memory"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 10,
+          "question": "Which technology is used for contactless payments?",
+          "options": ["Bluetooth", "Wi-Fi", "NFC", "GPS"],
+          "correctAnswer": 2
+        }
+      ]
+    }
+  ]
+}

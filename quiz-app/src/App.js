@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import TopicSelection from './components/TopicSelection';
 import Quiz from './components/Quiz';
-
+import Results from './components/Results';
+import quizData from './data/quizData.json'
 
 function App() {
   // Keep track of which screen is being shown
